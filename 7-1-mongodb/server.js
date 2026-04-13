@@ -191,11 +191,11 @@ import mongoose from "mongoose";
 // establish connection
 mongoose
   .connect(
-    "mongodb+srv://s202282700_db_user:McNuggies69#@cluster0.atwgske.mongodb.net/TestDB"
+    "mongodb+srv://s202282700_db_user:McNuggies69%23@cluster0.atwgske.mongodb.net/TestDB"
   )
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("Connection error:", err));
-
+  
 // define schema
 const studentSchema = new mongoose.Schema({
   name: String,
